@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <h1 class="main-title">POKENEA</h1>
     <div class="container">
         <h1 class="pokenea-title">{{ pokenea.nombre }}</h1>
         <p class="pokenea-id">Pokenea #{{ pokenea.id }}</p>
@@ -20,8 +21,7 @@
         <div class="container-info">
             Servido desde el contenedor: <span class="container-id">{{ container_id }}</span>
         </div>
-        
-        <a href="/pokenea/imagen" class="reload-btn">Ver otro Pokenea</a>
     </div>
+    <a href="/pokenea/imagen" class="reload-btn">Más Pokeneas</a>
 </body>
 </html>

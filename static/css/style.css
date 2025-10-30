@@ -6,91 +6,117 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #60a5fa; /* Azul cielo suave y amigable */
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
+.main-title {
+    color: #fff7ed; /* Crema suave */
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
 .container {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    max-width: 600px;
+    background: transparent;
+    max-width: 650px;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 }
 
 .pokenea-title {
-    color: #667eea;
+    color: #fffbeb; /* Amarillo crema muy suave */
     font-size: 2.5em;
     margin-bottom: 10px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 .pokenea-id {
-    color: #999;
+    color: #fef3c7; /* Amarillo pastel suave */
     font-size: 1.2em;
     margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .pokenea-image {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
-    margin: 20px auto;
-    border-radius: 15px;
-    background: #f8f9fa;
+    margin: 25px auto;
+    border-radius: 50%;
+    background: white;
     padding: 20px;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
 .pokenea-phrase {
     font-style: italic;
-    color: #555;
+    color: #fff7ed; /* Crema suave */
     font-size: 1.3em;
-    margin: 30px 0;
-    padding: 20px;
-    background: #f0f0f0;
-    border-radius: 10px;
-    border-left: 4px solid #667eea;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    max-width: 500px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 .container-info {
     margin-top: 30px;
     padding: 15px;
-    background: #e8eaf6;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     font-size: 0.9em;
-    color: #666;
+    color: #fef3c7; /* Amarillo pastel */
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .container-id {
     font-family: 'Courier New', monospace;
-    color: #667eea;
+    color: #fff7ed; /* Crema suave */
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .reload-btn {
-    margin-top: 30px;
-    padding: 15px 40px;
-    background: #667eea;
-    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 30px;
+    background: #fbbf24; /* Amarillo dorado suave */
+    color: #78350f; /* Marrón oscuro para contraste */
     border: none;
-    border-radius: 50px;
-    font-size: 1.1em;
+    border-radius: 30px;
+    font-size: 1em;
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
     display: inline-block;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    z-index: 1000;
 }
 
 .reload-btn:hover {
-    background: #764ba2;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #fcd34d; /* Amarillo más claro al hover */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
