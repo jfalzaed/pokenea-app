@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 80
 
 # Comando para ejecutar la aplicación
-CMD ["python", "app/main.py"]
+CMD ["python", "-m", "app.main"]
